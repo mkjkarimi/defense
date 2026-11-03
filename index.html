@@ -90,8 +90,8 @@
   .btn-ghost{background:transparent;color:var(--gold-2)}
   .btn-ghost:hover{background:rgba(201,164,92,.1)}
 
-  .banner{height:240px;border:1px solid var(--line);border-bottom:0;border-radius:4px 4px 0 0;
-    background:linear-gradient(180deg,rgba(13,24,40,.15),rgba(13,24,40,.85)),var(--banner) center 30%/cover no-repeat}
+  .banner{aspect-ratio:2.4/1;border:1px solid var(--line);border-bottom:0;border-radius:4px 4px 0 0;
+    background:linear-gradient(180deg,rgba(13,24,40,0) 55%,rgba(13,24,40,.75)),var(--banner) center/cover no-repeat}
   .banner:not(.has){display:none}
   .banner.has+.card{border-radius:0 0 4px 4px}
   .portrait{display:block;width:104px;height:104px;object-fit:cover;border-radius:50%;margin:14px auto 8px;
@@ -450,9 +450,9 @@ const EVENT_START = new Date("2026-11-10T12:30:00+03:30");
   env.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") open(); });
 })();
 
-/* ===== عکس سردر: اگر assets/faculty.jpg باشد نمایش داده می‌شود ===== */
+/* ===== عکس سردر (زوم روی تابلوی دانشکده) ===== */
 (() => { const img = new Image(); img.onload = () => { const b = document.getElementById("banner");
-  b.style.setProperty("--banner", "url(assets/faculty.jpg)"); b.classList.add("has"); }; img.src = "assets/faculty.jpg"; })();
+  b.style.setProperty("--banner", "url(assets/faculty-sign.jpg)"); b.classList.add("has"); }; img.src = "assets/faculty-sign.jpg"; })();
 
 /* ===== شخصی‌سازی: ?to=جناب آقای دکتر ... ===== */
 const params = new URLSearchParams(location.search);
