@@ -293,6 +293,51 @@
     </div>
   </section>
 
+  <section id="rsvp">
+    <div class="sec-head"><small>پاسخ به دعوت</small><h2>اعلام حضور</h2></div>
+    <div class="panel">
+      <form id="rsvp-form" novalidate>
+        <div>
+          <label for="f-name">نام و نام خانوادگی</label>
+          <input id="f-name" name="name" autocomplete="name" required>
+        </div>
+        <div>
+          <label>آیا در جلسه حضور می‌یابید؟</label>
+          <div class="choice">
+            <input type="radio" name="attending" id="a-yes" value="yes" checked><label for="a-yes">با کمال میل می‌آیم</label>
+            <input type="radio" name="attending" id="a-no" value="no"><label for="a-no">متأسفانه نمی‌توانم</label>
+          </div>
+        </div>
+        <div class="row2" id="guests-row">
+          <div>
+            <label for="f-phone">شماره‌ی تماس <span style="color:var(--ivory-faint)">(اختیاری)</span></label>
+            <input id="f-phone" name="phone" inputmode="tel" autocomplete="tel" dir="ltr" style="text-align:right">
+          </div>
+          <div>
+            <label for="f-guests">تعداد همراه</label>
+            <select id="f-guests" name="guests">
+              <option value="0">بدون همراه</option><option value="1">۱ نفر</option>
+              <option value="2">۲ نفر</option><option value="3">۳ نفر</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label for="f-note">پیام شما <span style="color:var(--ivory-faint)">(اختیاری)</span></label>
+          <textarea id="f-note" name="note"></textarea>
+        </div>
+        <button class="btn btn-gold" type="submit" id="submit" style="justify-content:center">ثبت پاسخ</button>
+        <div class="msg" id="msg" role="status" aria-live="polite"></div>
+      </form>
+      <div class="alt" id="alt">
+        <p class="hint">اگر ثبت پاسخ انجام نشد، از یکی از این راه‌ها خبر بدهید:</p>
+        <div class="cta-row">
+          <a class="btn btn-ghost" id="alt-tg" target="_blank" rel="noopener">تلگرام</a>
+          <a class="btn btn-ghost" id="alt-wa" target="_blank" rel="noopener">واتساپ</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="about" class="about">
     <div class="sec-head"><small>درباره‌ی پژوهش</small><h2>این پایان‌نامه درباره‌ی چیست؟</h2></div>
     <div class="panel">
@@ -364,50 +409,6 @@
     </div>
   </section>
 
-  <section id="rsvp">
-    <div class="sec-head"><small>پاسخ به دعوت</small><h2>اعلام حضور</h2></div>
-    <div class="panel">
-      <form id="rsvp-form" novalidate>
-        <div>
-          <label for="f-name">نام و نام خانوادگی</label>
-          <input id="f-name" name="name" autocomplete="name" required>
-        </div>
-        <div>
-          <label>آیا در جلسه حضور می‌یابید؟</label>
-          <div class="choice">
-            <input type="radio" name="attending" id="a-yes" value="yes" checked><label for="a-yes">با کمال میل می‌آیم</label>
-            <input type="radio" name="attending" id="a-no" value="no"><label for="a-no">متأسفانه نمی‌توانم</label>
-          </div>
-        </div>
-        <div class="row2" id="guests-row">
-          <div>
-            <label for="f-phone">شماره‌ی تماس <span style="color:var(--ivory-faint)">(اختیاری)</span></label>
-            <input id="f-phone" name="phone" inputmode="tel" autocomplete="tel" dir="ltr" style="text-align:right">
-          </div>
-          <div>
-            <label for="f-guests">تعداد همراه</label>
-            <select id="f-guests" name="guests">
-              <option value="0">بدون همراه</option><option value="1">۱ نفر</option>
-              <option value="2">۲ نفر</option><option value="3">۳ نفر</option>
-            </select>
-          </div>
-        </div>
-        <div>
-          <label for="f-note">پیام شما <span style="color:var(--ivory-faint)">(اختیاری)</span></label>
-          <textarea id="f-note" name="note"></textarea>
-        </div>
-        <button class="btn btn-gold" type="submit" id="submit" style="justify-content:center">ثبت پاسخ</button>
-        <div class="msg" id="msg" role="status" aria-live="polite"></div>
-      </form>
-      <div class="alt" id="alt">
-        <p class="hint">اگر ثبت پاسخ انجام نشد، از یکی از این راه‌ها خبر بدهید:</p>
-        <div class="cta-row">
-          <a class="btn btn-ghost" id="alt-tg" target="_blank" rel="noopener">تلگرام</a>
-          <a class="btn btn-ghost" id="alt-wa" target="_blank" rel="noopener">واتساپ</a>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <section class="grad">
     <figure class="grad-photo">
