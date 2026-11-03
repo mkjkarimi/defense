@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>دعوت به جلسه دفاع</title>
+<meta name="description" content="دعوت به جلسه‌ی دفاع از پایان‌نامه‌ی دکتری عمومی داروسازی محمد کریمی جعفری — سه‌شنبه ۱۹ آبان ۱۴۰۵، ساعت ۱۲:۳۰">
+<meta property="og:title" content="دعوت به جلسه‌ی دفاع از پایان‌نامه — محمد کریمی جعفری">
+<meta property="og:description" content="سه‌شنبه ۱۹ آبان ۱۴۰۵، ساعت ۱۲:۳۰ — پردیس بین‌الملل دانشکده داروسازی دانشگاه علوم پزشکی تهران">
+<meta property="og:image" content="card.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vazirmatn@33.0.3/Vazirmatn-font-face.css">
+<link rel="preload" href="assets/fonts/IranNastaliq.ttf" as="font" type="font/ttf" crossorigin>
+<style>
+  :root{
+    --navy:#0d1828; --navy-2:#13233a; --navy-3:#1b2f4d;
+    --gold:#c9a45c; --gold-2:#e6cf98; --gold-dim:rgba(201,164,92,.35);
+    --ivory:#f6f1e6; --ivory-dim:rgba(246,241,230,.72); --ivory-faint:rgba(246,241,230,.5);
+    --line:rgba(201,164,92,.28);
+    --ok:#7fb59a; --err:#e39a8c;
+  }
+  @font-face{font-family:"IranNastaliq";src:url(assets/fonts/IranNastaliq.ttf) format("truetype");font-display:swap}
+  *{box-sizing:border-box;margin:0;padding:0}
+  .nastaliq{font-family:IranNastaliq, Vazirmatn, serif;font-weight:400}
+  html{scroll-behavior:smooth}
+  html,body{overflow-x:hidden}
+  body{
+    background:var(--navy); color:var(--ivory);
+    font-family:Vazirmatn, Tahoma, sans-serif; line-height:1.9; font-size:16px;
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -10%, rgba(201,164,92,.16), transparent 70%),
+      radial-gradient(ellipse 60% 40% at 100% 100%, rgba(27,47,77,.9), transparent 70%);
+    background-attachment:fixed; min-height:100vh;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:0 16px}
+  .gold-mask{background:linear-gradient(160deg,var(--gold-2),var(--gold) 55%,#a6803c);
+    -webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-position:center;mask-position:center;
+    -webkit-mask-size:contain;mask-size:contain}
+  .bism{width:120px;height:84px;margin:0 auto;-webkit-mask-image:url(assets/bismillah.png);mask-image:url(assets/bismillah.png);opacity:.85}
+  .logo{width:68px;height:68px;margin:0 auto;-webkit-mask-image:url(assets/tums-logo.png);mask-image:url(assets/tums-logo.png)}
+
+  /* ---------- hero card ---------- */
+  .hero{padding:40px 0 24px}
+  .card{
+    position:relative; border:1px solid var(--line); border-radius:4px;
+    padding:40px 28px 36px; text-align:center;
+    background:linear-gradient(180deg,rgba(19,35,58,.92),rgba(13,24,40,.96));
+    box-shadow:0 30px 80px rgba(0,0,0,.45);
+  }
+  .card::before{content:"";position:absolute;inset:8px;border:1px solid var(--gold-dim);border-radius:2px;pointer-events:none}
+  .corner{position:absolute;width:34px;height:34px;border-color:var(--gold);border-style:solid;opacity:.9}
+  .c1{top:16px;right:16px;border-width:2px 2px 0 0}.c2{top:16px;left:16px;border-width:2px 0 0 2px}
+  .c3{bottom:16px;right:16px;border-width:0 2px 2px 0}.c4{bottom:16px;left:16px;border-width:0 0 2px 2px}
+  .uni{margin-top:14px;font-size:13px;color:var(--ivory-dim);letter-spacing:.2px}
+  .eyebrow{margin-top:26px;font-size:13px;color:var(--gold);letter-spacing:3px}
+  .greet{margin-top:22px;font-size:17px;color:var(--ivory)}
+  .invite-title{margin-top:22px;font-size:40px;line-height:1.6;color:var(--gold-2);
+    background:linear-gradient(160deg,var(--gold-2),var(--gold) 60%,#a6803c);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .lead{margin-top:10px;font-size:15px;color:var(--ivory-dim);max-width:540px;margin-inline:auto}
+  .lead.nastaliq{font-size:25px;line-height:2.1;color:var(--ivory)}
+  .divider{display:flex;align-items:center;gap:12px;justify-content:center;margin:26px auto;max-width:300px;color:var(--gold)}
+  .divider::before,.divider::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+  .divider::after{background:linear-gradient(270deg,transparent,var(--gold))}
+  .divider span{font-size:12px}
+  .title{font-size:21px;font-weight:700;line-height:1.85;color:var(--gold-2);max-width:560px;margin:0 auto}
+  .by{margin-top:22px;font-size:13px;color:var(--ivory-faint)}
+  .name{font-size:26px;font-weight:800;margin-top:2px;letter-spacing:-.3px}
+  .degree{font-size:13px;color:var(--ivory-dim)}
+  .people{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:28px auto 0;max-width:520px}
+  .people div{border-top:1px solid var(--line);padding-top:12px}
+  .people small{display:block;font-size:12px;color:var(--gold);margin-bottom:2px}
+  .people b{font-weight:500;font-size:14.5px}
+
+  .when{display:grid;grid-template-columns:repeat(3,1fr);margin:34px auto 0;max-width:540px;border:1px solid var(--line)}
+  .when div{padding:16px 6px}
+  .when div+div{border-right:1px solid var(--line)}
+  .when small{display:block;font-size:11.5px;color:var(--gold);letter-spacing:1px}
+  .when b{display:block;font-size:17px;font-weight:700;margin-top:4px}
+  .when span{display:block;font-size:12px;color:var(--ivory-faint)}
+
+  .countdown{display:flex;justify-content:center;gap:10px;margin-top:22px;font-variant-numeric:tabular-nums}
+  .countdown div{min-width:62px;padding:8px 4px;background:rgba(201,164,92,.07);border:1px solid var(--line)}
+  .countdown b{display:block;font-size:20px;font-weight:700;color:var(--gold-2)}
+  .countdown small{font-size:11px;color:var(--ivory-faint)}
+
+  .cta-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:28px}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;font:inherit;font-size:14.5px;font-weight:600;
+    border-radius:2px;cursor:pointer;text-decoration:none;transition:.2s;border:1px solid var(--gold)}
+  .btn-gold{background:linear-gradient(160deg,var(--gold-2),var(--gold));color:var(--navy)}
+  .btn-gold:hover{filter:brightness(1.07)}
+  .btn-ghost{background:transparent;color:var(--gold-2)}
+  .btn-ghost:hover{background:rgba(201,164,92,.1)}
+
+  .banner{height:240px;border:1px solid var(--line);border-bottom:0;border-radius:4px 4px 0 0;
+    background:linear-gradient(180deg,rgba(13,24,40,.15),rgba(13,24,40,.85)),var(--banner) center 30%/cover no-repeat}
+  .banner:not(.has){display:none}
+  .banner.has+.card{border-radius:0 0 4px 4px}
+  .portrait{display:block;width:104px;height:104px;object-fit:cover;border-radius:50%;margin:14px auto 8px;
+    border:2px solid var(--gold);box-shadow:0 0 0 5px rgba(201,164,92,.15)}
+
+  /* ---------- sections ---------- */
+  section{padding:30px 0}
+  .sec-head{text-align:center;margin-bottom:22px}
+  .sec-head small{display:block;color:var(--gold);font-size:12px;letter-spacing:3px}
+  .sec-head h2{font-size:21px;font-weight:700;margin-top:4px}
+  .panel{border:1px solid var(--line);background:rgba(19,35,58,.6);padding:26px 24px;border-radius:3px}
+
+  .place p{color:var(--ivory-dim);font-size:15px}
+  .place .addr{font-size:16px;color:var(--ivory);font-weight:500;margin-bottom:6px}
+  .place .cta-row{justify-content:flex-start;margin-top:18px}
+
+  .about p{color:var(--ivory-dim);font-size:15px;text-align:justify}
+  .stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:22px 0}
+  .stat{border:1px solid var(--line);padding:14px 14px 12px;background:rgba(13,24,40,.5)}
+  .stat b{display:block;font-size:24px;font-weight:800;color:var(--gold-2);font-variant-numeric:tabular-nums;line-height:1.5}
+  .stat span{font-size:13px;color:var(--ivory-dim);line-height:1.7;display:block}
+  .chart{border-top:1px solid var(--line);padding:20px 0 6px}
+  .chart h3{font-size:15.5px;font-weight:700;color:var(--ivory);margin-bottom:14px;line-height:1.8}
+  .cap{font-size:12.5px !important;color:var(--ivory-faint) !important;margin-top:10px;text-align:right !important}
+  .split{display:grid;gap:10px}
+  .split-row{display:grid;grid-template-columns:120px 1fr;align-items:center;gap:10px}
+  .split-lbl{font-size:13px;color:var(--ivory-dim)}
+  .split-bar{position:relative;height:30px;background:rgba(246,241,230,.06);border:1px solid var(--line)}
+  .split-bar i{position:absolute;inset-block:0;right:0;background:linear-gradient(270deg,var(--gold-2),var(--gold))}
+  .split-bar em{position:absolute;inset-block:0;left:10px;display:flex;align-items:center;font-style:normal;font-weight:700;font-size:14px;color:var(--gold-2)}
+  .cols{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;text-align:center}
+  .col-plot{display:flex;flex-direction:column}
+  .col-plot .up{display:flex;flex-direction:column;justify-content:flex-end;border-bottom:1px solid var(--gold)}
+  .col-plot i{display:block;width:56%;margin:0 auto;background:linear-gradient(180deg,var(--gold-2),var(--gold))}
+  .col-plot .down i{background:linear-gradient(0deg,#b9786c,var(--err))}
+  .col b{direction:ltr;unicode-bidi:isolate;display:block;font-size:19px;font-weight:800;color:var(--gold-2);margin-top:8px;font-variant-numeric:tabular-nums}
+  .col b.n{color:var(--err)}
+  .col span{display:block;font-size:12.5px;color:var(--ivory-dim);line-height:1.6}
+  .col small{color:var(--ivory-faint)}
+  .paths{list-style:none;counter-reset:p;display:grid;gap:8px}
+  .paths li{counter-increment:p;display:grid;grid-template-columns:34px 1fr;grid-template-rows:auto auto;column-gap:10px;align-items:center;padding:8px 0;border-bottom:1px dashed var(--line)}
+  .paths li::before{content:counter(p,persian);grid-row:span 2;width:34px;height:34px;border:1px solid var(--gold);color:var(--gold-2);display:flex;align-items:center;justify-content:center;font-weight:700}
+  .paths b{font-size:14.5px}
+  .paths span{font-size:13px;color:var(--ivory-faint)}
+  details{margin-top:14px;border-top:1px solid var(--line);padding-top:12px}
+  summary{cursor:pointer;color:var(--gold-2);font-size:14.5px;font-weight:600;list-style:none}
+  summary::-webkit-details-marker{display:none}
+  summary::before{content:"＋ ";color:var(--gold)}
+  details[open] summary::before{content:"－ "}
+  details .abs{margin-top:12px}
+  details .abs h4{color:var(--gold);font-size:14px;margin-top:12px}
+  details .abs p{font-size:14px;line-height:2}
+  .kw{font-size:13px;color:var(--ivory-faint);margin-top:12px}
+
+  /* ---------- RSVP ---------- */
+  form{display:grid;gap:16px}
+  label{font-size:13.5px;color:var(--gold-2);display:block;margin-bottom:6px}
+  input,textarea,select{width:100%;font:inherit;font-size:15px;color:var(--ivory);background:rgba(13,24,40,.7);
+    border:1px solid var(--line);border-radius:2px;padding:11px 13px;outline:none;transition:.2s}
+  input:focus,textarea:focus,select:focus{border-color:var(--gold)}
+  textarea{min-height:84px;resize:vertical}
+  .choice{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .choice{position:relative}
+  .choice input{position:absolute;opacity:0;pointer-events:none;width:1px;height:1px;inset:0}
+  .choice label{margin:0;cursor:pointer;text-align:center;padding:13px 8px;border:1px solid var(--line);color:var(--ivory-dim);font-size:14.5px;transition:.2s}
+  .choice input:checked+label{border-color:var(--gold);background:rgba(201,164,92,.13);color:var(--gold-2);font-weight:600}
+  .choice input:focus-visible+label{outline:2px solid var(--gold);outline-offset:2px}
+  .row2{display:grid;grid-template-columns:1fr 140px;gap:12px}
+  .hint{font-size:12px;color:var(--ivory-faint);margin-top:4px}
+  .msg{display:none;padding:16px 18px;border:1px solid;font-size:15px;text-align:center}
+  .msg.ok{display:block;border-color:var(--ok);color:var(--ok);background:rgba(127,181,154,.08)}
+  .msg.err{display:block;border-color:var(--err);color:var(--err);background:rgba(227,154,140,.08)}
+  .alt{display:none;margin-top:12px;text-align:center}
+  .alt.show{display:block}
+  .alt .cta-row{margin-top:10px}
+
+  .grad{text-align:center;padding-top:10px}
+  .grad-photo{max-width:340px;margin:0 auto;padding:10px;border:1px solid var(--line);background:rgba(19,35,58,.6);position:relative}
+  .grad-photo::before{content:"";position:absolute;inset:-6px;border:1px solid var(--gold-dim);pointer-events:none}
+  .grad-photo img{display:block;width:100%;height:auto}
+  .grad-note{font-size:34px;color:var(--gold-2);margin-top:14px}
+  footer{text-align:center;padding:36px 0 50px;color:var(--ivory-faint);font-size:13px}
+  footer .logo{width:40px;height:40px;opacity:.6;margin-bottom:8px}
+
+  @media (max-width:520px){
+    .card{padding:34px 18px 30px}
+    .title{font-size:18px}
+    .name{font-size:23px}
+    .people,.row2{grid-template-columns:1fr}
+    .when b{font-size:15px}
+    .countdown div{min-width:56px}
+    .panel{padding:22px 16px}
+  }
+  /* ---------- envelope intro ---------- */
+  .env-wrap{position:fixed;inset:0;z-index:50;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;
+    background:radial-gradient(ellipse at 50% 40%,#1b2f4d,#0a1220 75%);transition:opacity .8s ease .9s, visibility 0s linear 1.7s}
+  .env{position:relative;width:min(320px,82vw);aspect-ratio:1.45;perspective:900px}
+  .env-body{position:absolute;inset:0;border-radius:6px;background:linear-gradient(160deg,#f3ead6,#e2d2ad);
+    box-shadow:0 30px 70px rgba(0,0,0,.55), inset 0 0 0 1px rgba(166,128,60,.35)}
+  .env-body::after{content:"";position:absolute;inset:0;border-radius:6px;
+    background:linear-gradient(to top right,transparent 49.6%,rgba(166,128,60,.28) 50%,transparent 50.4%),
+               linear-gradient(to top left,transparent 49.6%,rgba(166,128,60,.28) 50%,transparent 50.4%)}
+  .env-flap{position:absolute;inset:0 0 auto 0;height:58%;transform-origin:top;clip-path:polygon(0 0,100% 0,50% 100%);
+    background:linear-gradient(180deg,#e9dcbb,#d8c394);transition:transform .9s cubic-bezier(.6,.05,.3,1);z-index:2;
+    filter:drop-shadow(0 4px 6px rgba(0,0,0,.2))}
+  .seal{position:absolute;left:50%;top:58%;transform:translate(-50%,-50%);z-index:3;width:76px;height:76px;border-radius:50%;border:0;cursor:pointer;
+    background:radial-gradient(circle at 35% 30%,#2a4470,#13233a 60%,#0b1626);
+    box-shadow:0 6px 14px rgba(0,0,0,.45), inset 0 0 0 3px rgba(201,164,92,.75), inset 0 0 0 6px #13233a, inset 0 0 0 7px rgba(201,164,92,.45);
+    display:flex;align-items:center;justify-content:center;transition:transform .35s ease, opacity .4s ease}
+  .seal:hover{transform:translate(-50%,-50%) scale(1.06)}
+  .seal:focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+  .seal-logo{width:36px;height:36px;-webkit-mask-image:url(assets/tums-logo.png);mask-image:url(assets/tums-logo.png)}
+  .env-to{font-size:36px;color:var(--gold-2);min-height:1.6em;text-align:center;padding:0 16px}
+  .env-hint{font-size:13px;color:var(--ivory-faint);animation:pulse 2.2s ease-in-out infinite}
+  @keyframes pulse{50%{opacity:.45}}
+  .env-wrap.open .env-flap{transform:rotateX(180deg)}
+  .env-wrap.open .seal{opacity:0;transform:translate(-50%,-50%) scale(.6)}
+  .env-wrap.open .env{animation:sink 1s ease .55s forwards}
+  @keyframes sink{to{transform:translateY(30px) scale(.94);opacity:0}}
+  .env-wrap.open{opacity:0;visibility:hidden;pointer-events:none}
+  body.locked{overflow:hidden}
+
+  @media (prefers-reduced-motion:no-preference){
+    .card{animation:rise .9s ease both}
+    @keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  }
+</style>
+</head>
+<body>
+<div id="envelope" class="env-wrap" aria-hidden="false">
+  <div class="env">
+    <div class="env-body"></div>
+    <div class="env-flap"></div>
+    <button class="seal" id="seal" type="button" aria-label="گشودن دعوت‌نامه">
+      <span class="seal-logo gold-mask"></span>
+    </button>
+  </div>
+  <p class="env-to nastaliq" id="env-to">به نام شما</p>
+  <p class="env-hint">برای گشودن دعوت‌نامه، روی مهر بزنید</p>
+</div>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="banner" id="banner" role="img" aria-label="سردر دانشکده داروسازی"></div>
+    <div class="card">
+      <i class="corner c1"></i><i class="corner c2"></i><i class="corner c3"></i><i class="corner c4"></i>
+      <div class="bism gold-mask" role="img" aria-label="بسم الله الرحمن الرحیم"></div>
+      <div class="logo gold-mask" role="img" aria-label="نشان دانشگاه علوم پزشکی تهران" style="margin-top:14px"></div>
+      <div class="uni">دانشگاه علوم پزشکی تهران · معاونت بین‌الملل · دانشکده داروسازی</div>
+
+      <div class="invite-title nastaliq">دعوت‌نامه‌ی جلسه‌ی دفاع</div>
+      <p class="greet" id="greet">مهمان گرامی</p>
+      <p class="lead nastaliq">بدین‌وسیله از حضرتعالی صمیمانه دعوت می‌شود تا با حضور ارزشمند خود در جلسه‌ی دفاع از پایان‌نامه‌ی دکتری عمومی داروسازی اینجانب، این روز را به یادماندنی کنید. بی‌تردید حضور پرمهر و نگاه اندیشمندانه‌ی شما مایه‌ی دلگرمی و افتخار بنده خواهد بود.</p>
+
+      <div class="divider"><span>◆</span></div>
+
+      <h1 class="title">بررسی سهم بازار، نوع بازار و رویکردهای شرکت‌های تأمین‌کننده‌ی محصولات دارویی پرفروش در ایران بر اساس مدل اقیانوس قرمز و آبی</h1>
+
+      <p class="by">ارائه‌دهنده</p>
+      <img class="portrait" src="assets/portrait.jpg" alt="محمد کریمی جعفری" onerror="this.remove()">
+      <div class="name">محمد کریمی جعفری</div>
+      <div class="degree">دانشجوی دکتری عمومی داروسازی</div>
+
+      <div class="people">
+        <div><small>استاد راهنما</small><b>جناب آقای دکتر عباس کبریایی‌زاده</b></div>
+        <div><small>استاد راهنما</small><b>جناب آقای دکتر اکبر عبداللهی‌اصل</b></div>
+      </div>
+
+      <div class="when">
+        <div><small>روز</small><b>سه‌شنبه</b><span>&nbsp;</span></div>
+        <div><small>تاریخ</small><b>۱۹ آبان ۱۴۰۵</b><span>۱۰ نوامبر ۲۰۲۶</span></div>
+        <div><small>ساعت</small><b>۱۲:۳۰</b><span>ظهر</span></div>
+      </div>
+
+      <div class="countdown" id="countdown" aria-label="زمان باقی‌مانده تا جلسه">
+        <div><b id="cd-d">–</b><small>روز</small></div>
+        <div><b id="cd-h">–</b><small>ساعت</small></div>
+        <div><b id="cd-m">–</b><small>دقیقه</small></div>
+      </div>
+
+      <div class="cta-row">
+        <a class="btn btn-gold" href="#rsvp">اعلام حضور</a>
+        <a class="btn btn-ghost" href="#place">مسیر و نشانی</a>
+        <button class="btn btn-ghost" type="button" id="ics">افزودن به تقویم</button>
+      </div>
+    </div>
+  </header>
+
+  <section id="place" class="place">
+    <div class="sec-head"><small>محل برگزاری</small><h2>نشانی جلسه</h2></div>
+    <div class="panel">
+      <p class="addr">پردیس بین‌الملل دانشکده داروسازی دانشگاه علوم پزشکی تهران</p>
+      <p>تهران، خیابان وحدت اسلامی، خیابان بهشت، پلاک ۳۸</p>
+      <p id="hall"></p>
+      <div class="cta-row">
+        <a class="btn btn-gold" target="_blank" rel="noopener" href="https://balad.ir/p/%D9%BE%D8%B1%D8%AF%DB%8C%D8%B3-%D8%A8%DB%8C%D9%86-%D8%A7%D9%84%D9%85%D9%84%D9%84-%D8%AF%D8%A7%D9%86%D8%B4%DA%A9%D8%AF%D9%87-%D8%AF%D8%A7%D8%B1%D9%88%D8%B3%D8%A7%D8%B2%DB%8C-%D8%AF%D8%A7%D9%86%D8%B4%DA%AF%D8%A7%D9%87-%D8%B9%D9%84%D9%88%D9%85-%D9%BE%D8%B2%D8%B4%DA%A9%DB%8C-%D8%AA%D9%87%D8%B1%D8%A7%D9%86-tehran-nei-sangelaj_school-63lzAfwp99CaHi">مسیریابی با بلد</a>
+        <a class="btn btn-ghost" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=%D9%BE%D8%B1%D8%AF%DB%8C%D8%B3+%D8%A8%DB%8C%D9%86+%D8%A7%D9%84%D9%85%D9%84%D9%84+%D8%AF%D8%A7%D9%86%D8%B4%DA%A9%D8%AF%D9%87+%D8%AF%D8%A7%D8%B1%D9%88%D8%B3%D8%A7%D8%B2%DB%8C+%D8%AE%DB%8C%D8%A7%D8%A8%D8%A7%D9%86+%D8%A8%D9%87%D8%B4%D8%AA+%D8%AA%D9%87%D8%B1%D8%A7%D9%86">گوگل‌مپ</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="sec-head"><small>درباره‌ی پژوهش</small><h2>این پایان‌نامه درباره‌ی چیست؟</h2></div>
+    <div class="panel">
+      <p>بازار دارویی ایران در نگاه کلی رقابتی به نظر می‌رسد، اما رقابت واقعی در بازار تک‌تک اقلام دارویی جریان دارد. این پژوهش با داده‌های آمارنامه‌ی دارویی سازمان غذا و دارو (۱۴۰۰ تا ۱۴۰۴) و مصاحبه با مدیران شرکت‌های دارویی بررسی می‌کند که بازار هر دارو چقدر شلوغ یا خلوت است، آیا می‌شود «اقیانوس‌های آبی» را با شاخص‌های تمرکز بازار پیدا کرد، و حضور در بازارهای کم‌رقابت چه رابطه‌ای با رشد واقعی شرکت‌ها دارد.</p>
+
+      <div class="stats">
+        <div class="stat"><b>۲٬۶۵۴</b><span>قلم دارویی بررسی‌شده در پنج سال</span></div>
+        <div class="stat"><b>۷۵٫۲٪</b><span>اقلام با حداکثر پنج تأمین‌کننده، اما فقط ۳۱٫۷٪ ارزش بازار</span></div>
+        <div class="stat"><b>۷۶ از ۱۶۵</b><span>شرکت با رشد واقعی منفی؛ بیشتر به دلیل افت حجم فروش</span></div>
+        <div class="stat"><b>۵ مسیر</b><span>برای ساختن جایگاه کم‌رقابتِ ارزش‌آفرین، از نگاه مدیران</span></div>
+      </div>
+
+      <div class="chart">
+        <h3>بیشتر اقلام دارویی بازار خلوت دارند، اما بیشتر پول در بازارهای شلوغ است</h3>
+        <div class="split">
+          <div class="split-row"><span class="split-lbl">سهم از تعداد اقلام</span>
+            <div class="split-bar"><i style="width:75.2%"></i><em>۷۵٫۲٪</em></div></div>
+          <div class="split-row"><span class="split-lbl">سهم از ارزش بازار</span>
+            <div class="split-bar"><i style="width:31.7%"></i><em>۳۱٫۷٪</em></div></div>
+        </div>
+        <p class="cap">اقلامی که حداکثر پنج تأمین‌کننده دارند (۱۹۹۷ قلم از ۲۶۵۴). ۸۳۱ قلم فقط یک تأمین‌کننده داشتند.</p>
+      </div>
+
+      <div class="chart">
+        <h3>۲۶۰ قلم پرفروش: نوع بازار و رشد واقعی سالانه</h3>
+        <div class="cols">
+          <div class="col"><div class="col-plot"><div class="up" style="height:120px"><i style="height:115px"></i></div><div class="down" style="height:20px"></div></div><b>۱۴٫۴٪</b><span>شبه‌آبی<br><small>۷۰ قلم</small></span></div>
+          <div class="col"><div class="col-plot"><div class="up" style="height:120px"><i style="height:74px"></i></div><div class="down" style="height:20px"></div></div><b>۹٫۳٪</b><span>شبه‌آبی در دل قرمز<br><small>۱۵۹ قلم</small></span></div>
+          <div class="col"><div class="col-plot"><div class="up" style="height:120px"></div><div class="down" style="height:20px"><i style="height:13px"></i></div></div><b class="n">−۱٫۶٪</b><span>شبه‌قرمز<br><small>۳۱ قلم</small></span></div>
+        </div>
+        <p class="cap">میانه‌ی رشد واقعی (تعدیل‌شده با تورم) بازار هر قلم.</p>
+      </div>
+
+      <div class="chart">
+        <h3>شرکت‌هایی که بیشتر در بازارهای کم‌رقابت حضور دارند، رشد واقعی بهتری داشته‌اند</h3>
+        <div class="cols">
+          <div class="col"><div class="col-plot"><div class="up" style="height:110px"><i style="height:107px"></i></div><div class="down" style="height:66px"></div></div><b>۸٫۹٪</b><span>نسبت شبه‌آبی بالا</span></div>
+          <div class="col"><div class="col-plot"><div class="up" style="height:110px"><i style="height:42px"></i></div><div class="down" style="height:66px"></div></div><b>۳٫۵٪</b><span>نسبت شبه‌آبی متوسط</span></div>
+          <div class="col"><div class="col-plot"><div class="up" style="height:110px"></div><div class="down" style="height:66px"><i style="height:64px"></i></div></div><b class="n">−۵٫۳٪</b><span>نسبت شبه‌آبی پایین</span></div>
+        </div>
+        <p class="cap">میانه‌ی رشد روندی واقعی ۱۶۵ شرکت داخلی (p=۰٫۰۱۳؛ اندازه‌ی اثر کوچک). برتری موقعیت است، نه لزوماً برتری راهبرد.</p>
+      </div>
+
+      <div class="chart">
+        <h3>مدیران چطور جایگاه کم‌رقابت می‌سازند؟ پنج مسیر</h3>
+        <ol class="paths">
+          <li><b>فناوری و سرمایه</b><span>ورود به بازارهایی که سرمایه‌بر و فناوری‌برند</span></li>
+          <li><b>فرمولاسیون اختصاصی</b><span>تفاوت در فرم دارویی و فرمول</span></li>
+          <li><b>پیشگامی</b><span>زودتر از دیگران وارد شدن</span></li>
+          <li><b>تولید تحت لیسانس</b><span>همکاری با صاحبان دانش فنی</span></li>
+          <li><b>رهبری هیبرید</b><span>پیشتازی در دل بازار شلوغ</span></li>
+        </ol>
+      </div>
+
+      <details>
+        <summary>خواندن چکیده‌ی کامل</summary>
+        <div class="abs">
+          <h4>زمینه و هدف</h4>
+          <p>بازار دارویی ایران بر داروهای ژنریک و بایوسیمیلار استوار است و در نگاه کلان رقابتی و کم‌تمرکز به نظر می‌رسد، اما رقابت واقعی در بازار تک‌تک اقلام دارویی جریان دارد. استراتژی اقیانوس آبی فاصله گرفتن از رقابت را از راه خلق ارزش توصیف می‌کند. این پژوهش با سه هدف انجام شد: تبیین ساختار رقابتی بازار اقلام دارویی ایران بر پایه‌ی این مدل، اعتبارسنجی امکان شناسایی اقیانوس‌های آبی با شاخص‌های تمرکز، و بررسی رابطه‌ی ترکیب سبد محصولات با سهم بازار و عملکرد مالی واقعی شرکت‌های تأمین‌کننده.</p>
+          <h4>روش کار</h4>
+          <p>داده‌های آمارنامه‌ی دارویی سال‌های ۱۴۰۰ تا ۱۴۰۴ بر پایه‌ی کد ژنریک یکدست شد و رقابت در بازار هر قلم با تعداد تأمین‌کننده و شاخص‌های HHI، CR4 و CR2 سنجیده شد. بازارها در سه دسته‌ی شبه‌آبی، شبه‌آبی در دل قرمز و شبه‌قرمز قرار گرفتند. پیش‌بینی الگوریتم برای ۳۴ جفت شرکت–قلم از ۱۲ شرکت در برابر تعریفی عملیاتی و سه‌معیاره از اقیانوس آبی، که از مصاحبه با مدیران همین شرکت‌ها به دست آمد، اعتبارسنجی شد. سپس رابطه‌ی نسبت اقلام شبه‌آبی ۲۷۶ شرکت داخلی با سهم بازار آزموده شد، شرکت‌ها با الگوریتم K-means دسته‌بندی شدند و رشد روندی واقعی ۱۶۵ شرکت میان دسته‌ها مقایسه شد.</p>
+          <h4>یافته‌ها</h4>
+          <p>از ۲۶۵۴ قلم دارویی، ۷۵٫۲ درصد حداکثر پنج تأمین‌کننده داشتند اما تنها ۳۱٫۷ درصد ارزش بازار را می‌ساختند. خلوتی بازار با کوچکی بازار و با سرمایه‌بری و فناوری‌بری همراه بود. پیش‌بینی الگوریتم در ۷۶٫۵ درصد موارد با تعریف عملیاتی هم‌خوان بود. میانه‌ی رشد واقعی شرکت‌های دارای نسبت شبه‌آبی بالا، متوسط و پایین به‌ترتیب ۸٫۹، ۳٫۵ و منفی ۵٫۳ درصد بود و ۷۶ شرکت از ۱۶۵ شرکت رشد واقعی منفی داشتند. مدیران پنج مسیر برای ساختن جایگاه کم‌رقابت ارزش‌آفرین برشمردند: فناوری و سرمایه، فرمولاسیون اختصاصی، پیشگامی، تولید تحت لیسانس و رهبری هیبرید در بازار شلوغ.</p>
+          <h4>نتیجه‌گیری</h4>
+          <p>شاخص‌های تمرکز ابزار غربالگری مناسبی برای یافتن بازارهای کم‌رقابت‌اند، اما کم‌رقابتی را نشان می‌دهند و خلق ارزش را نمی‌بینند. برتری شرکت‌های دارای نسبت شبه‌آبی بالا کوچک است و بیش از آنکه برتری راهبرد باشد، برتری موقعیت است. حمایت مشروط و زمان‌دار از تولید داخل، پایش اقلام تک‌تأمین‌کننده و قیمت‌گذاری شفاف و شاخص‌گذاری‌شده پیشنهادهای اصلی این پژوهش‌اند.</p>
+          <p class="kw">واژگان کلیدی: استراتژی اقیانوس آبی، بازار دارویی ایران، تمرکز بازار، ساختار رقابتی بازار، سبد محصولات دارویی، عملکرد مالی، نرخ رشد روندی</p>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <section id="rsvp">
+    <div class="sec-head"><small>پاسخ به دعوت</small><h2>اعلام حضور</h2></div>
+    <div class="panel">
+      <form id="rsvp-form" novalidate>
+        <div>
+          <label for="f-name">نام و نام خانوادگی</label>
+          <input id="f-name" name="name" autocomplete="name" required>
+        </div>
+        <div>
+          <label>آیا در جلسه حضور می‌یابید؟</label>
+          <div class="choice">
+            <input type="radio" name="attending" id="a-yes" value="yes" checked><label for="a-yes">با کمال میل می‌آیم</label>
+            <input type="radio" name="attending" id="a-no" value="no"><label for="a-no">متأسفانه نمی‌توانم</label>
+          </div>
+        </div>
+        <div class="row2" id="guests-row">
+          <div>
+            <label for="f-phone">شماره‌ی تماس <span style="color:var(--ivory-faint)">(اختیاری)</span></label>
+            <input id="f-phone" name="phone" inputmode="tel" autocomplete="tel" dir="ltr" style="text-align:right">
+          </div>
+          <div>
+            <label for="f-guests">تعداد همراه</label>
+            <select id="f-guests" name="guests">
+              <option value="0">بدون همراه</option><option value="1">۱ نفر</option>
+              <option value="2">۲ نفر</option><option value="3">۳ نفر</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label for="f-note">پیام شما <span style="color:var(--ivory-faint)">(اختیاری)</span></label>
+          <textarea id="f-note" name="note"></textarea>
+        </div>
+        <button class="btn btn-gold" type="submit" id="submit" style="justify-content:center">ثبت پاسخ</button>
+        <div class="msg" id="msg" role="status" aria-live="polite"></div>
+      </form>
+      <div class="alt" id="alt">
+        <p class="hint">اگر ثبت پاسخ انجام نشد، از یکی از این راه‌ها خبر بدهید:</p>
+        <div class="cta-row">
+          <a class="btn btn-ghost" id="alt-tg" target="_blank" rel="noopener">تلگرام</a>
+          <a class="btn btn-ghost" id="alt-wa" target="_blank" rel="noopener">واتساپ</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="grad">
+    <figure class="grad-photo">
+      <img src="assets/graduation.jpg" alt="محمد کریمی جعفری با لباس فارغ‌التحصیلی، مقابل دانشکده‌ی داروسازی">
+    </figure>
+    <p class="grad-note nastaliq">منتظر دیدار شما هستم</p>
+  </section>
+
+  <footer>
+    <div class="logo gold-mask" role="img" aria-label=""></div>
+    <div>محمد کریمی جعفری · ۱۹ آبان ۱۴۰۵</div>
+  </footer>
+</div>
+
+<script>
+/* ===== تنظیمات — این‌ها را قبل از انتشار پر کن ===== */
+const CONFIG = {
+  RSVP_ENDPOINT: "https://script.google.com/macros/s/AKfycbywureXSbsMZ2HMJ4Z1JSDA37Qhyy4evISQkNefICqn1R5Nn4wu1qmTsR9p-pL4oBSX/exec",          // آدرس Web App گوگل (Apps Script) که پاسخ‌ها را در Google Sheet ثبت می‌کند
+  TELEGRAM_USER: "",          // نام کاربری تلگرام بدون @ (برای راه جایگزین)
+  WHATSAPP_PHONE: "989127231719",         // شماره‌ی واتساپ با کد کشور، بدون + و صفر، مثل 989121234567
+  HALL: ""                    // نام یا شماره‌ی سالن، مثلاً «سالن آمفی‌تئاتر طبقه‌ی اول»
+};
+const EVENT_START = new Date("2026-11-10T12:30:00+03:30");
+
+/* ===== پاکت و مهر ===== */
+(() => {
+  const env = document.getElementById("envelope");
+  const p = new URLSearchParams(location.search);
+  const who = (p.get("to") || "").trim().slice(0, 80);
+  document.getElementById("env-to").textContent = who || "مهمان گرامی";
+  let seen = false; try { seen = sessionStorage.getItem("env-opened") === "1"; } catch(_) {}
+  if (seen || p.get("open") === "1") { env.remove(); return; }
+  document.body.classList.add("locked");
+  const open = () => {
+    env.classList.add("open"); document.body.classList.remove("locked");
+    try { sessionStorage.setItem("env-opened", "1"); } catch(_) {}
+    setTimeout(() => env.remove(), 1800);
+  };
+  document.getElementById("seal").addEventListener("click", open);
+  env.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") open(); });
+})();
+
+/* ===== عکس سردر: اگر assets/faculty.jpg باشد نمایش داده می‌شود ===== */
+(() => { const img = new Image(); img.onload = () => { const b = document.getElementById("banner");
+  b.style.setProperty("--banner", "url(assets/faculty.jpg)"); b.classList.add("has"); }; img.src = "assets/faculty.jpg"; })();
+
+/* ===== شخصی‌سازی: ?to=جناب آقای دکتر ... ===== */
+const params = new URLSearchParams(location.search);
+const to = (params.get("to") || "").trim().slice(0, 80);
+if (to) {
+  document.getElementById("greet").textContent = to + "، سلام";
+  document.getElementById("f-name").value = to.replace(/^(جناب\s*آقای|سرکار\s*خانم|آقای|خانم|دکتر)\s*/g, "").replace(/^(دکتر)\s*/, "");
+}
+if (CONFIG.HALL) document.getElementById("hall").textContent = CONFIG.HALL;
+
+/* ===== شمارش معکوس ===== */
+const fa = n => String(n).replace(/\d/g, d => "۰۱۲۳۴۵۶۷۸۹"[d]);
+function tick(){
+  let ms = EVENT_START - new Date();
+  const box = document.getElementById("countdown");
+  if (ms <= 0) { box.innerHTML = '<div style="padding:8px 16px"><b style="font-size:16px">جلسه برگزار شد — سپاس از همراهی شما</b></div>'; return; }
+  const d = Math.floor(ms/864e5), h = Math.floor(ms%864e5/36e5), m = Math.floor(ms%36e5/6e4);
+  document.getElementById("cd-d").textContent = fa(d);
+  document.getElementById("cd-h").textContent = fa(h);
+  document.getElementById("cd-m").textContent = fa(m);
+}
+tick(); setInterval(tick, 30000);
+
+/* ===== افزودن به تقویم (.ics) ===== */
+document.getElementById("ics").addEventListener("click", () => {
+  const ics = [
+    "BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//defense-invite//FA","BEGIN:VEVENT",
+    "UID:defense-karimi-20261110@invite","DTSTAMP:20261103T000000Z",
+    "DTSTART:20261110T090000Z","DTEND:20261110T110000Z",
+    "SUMMARY:جلسه دفاع پایان‌نامه — محمد کریمی جعفری",
+    "LOCATION:پردیس بین‌الملل دانشکده داروسازی دانشگاه علوم پزشکی تهران، خیابان وحدت اسلامی، خیابان بهشت، پلاک ۳۸",
+    "BEGIN:VALARM","TRIGGER:-PT2H","ACTION:DISPLAY","DESCRIPTION:جلسه دفاع","END:VALARM",
+    "END:VEVENT","END:VCALENDAR"].join("\r\n");
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([ics], {type:"text/calendar;charset=utf-8"}));
+  a.download = "jalase-defa.ics"; a.click();
+});
+
+/* ===== فرم اعلام حضور ===== */
+const form = document.getElementById("rsvp-form"), msg = document.getElementById("msg");
+const guestsRow = document.getElementById("guests-row");
+form.attending.forEach(r => r.addEventListener("change", () => {
+  document.getElementById("f-guests").disabled = form.attending.value === "no";
+}));
+
+function showAlt(text){
+  const tg = document.getElementById("alt-tg"), wa = document.getElementById("alt-wa");
+  if (CONFIG.TELEGRAM_USER) tg.href = "https://t.me/" + CONFIG.TELEGRAM_USER; else tg.style.display = "none";
+  if (CONFIG.WHATSAPP_PHONE) wa.href = "https://wa.me/" + CONFIG.WHATSAPP_PHONE + "?text=" + encodeURIComponent(text); else wa.style.display = "none";
+  if (CONFIG.TELEGRAM_USER || CONFIG.WHATSAPP_PHONE) document.getElementById("alt").classList.add("show");
+}
+
+form.addEventListener("submit", async e => {
+  e.preventDefault();
+  const name = form.name.value.trim();
+  if (!name) { msg.className = "msg err"; msg.textContent = "لطفاً نام خود را بنویسید."; form.name.focus(); return; }
+  const yes = form.attending.value === "yes";
+  const data = { name, attending: yes ? "می‌آید" : "نمی‌آید", guests: yes ? form.guests.value : "0",
+                 phone: form.phone.value.trim(), note: form.note.value.trim(), invited_as: to, ts: new Date().toISOString() };
+  const fallbackText = `سلام، ${name} هستم. ${yes ? "در جلسه‌ی دفاع حضور می‌یابم" + (data.guests !== "0" ? ` (با ${data.guests} همراه)` : "") : "متأسفانه نمی‌توانم در جلسه‌ی دفاع حاضر شوم"}.`;
+  const btn = document.getElementById("submit");
+  btn.disabled = true; btn.textContent = "در حال ثبت…";
+  try {
+    if (!CONFIG.RSVP_ENDPOINT) throw new Error("no endpoint");
+    await fetch(CONFIG.RSVP_ENDPOINT, { method:"POST", mode:"no-cors",
+      headers:{ "Content-Type":"application/x-www-form-urlencoded" }, body:new URLSearchParams(data) });
+    msg.className = "msg ok";
+    msg.textContent = yes ? "پاسخ شما ثبت شد. بی‌صبرانه منتظر دیدارتان هستم 🌿" : "پاسخ شما ثبت شد. از لطفتان سپاسگزارم.";
+    try { localStorage.setItem("rsvp-done", "1"); } catch(_) {}
+    form.querySelectorAll("input,select,textarea,button").forEach(el => el.disabled = true);
+    btn.textContent = "ثبت شد";
+  } catch(err) {
+    msg.className = "msg err"; msg.textContent = "ثبت پاسخ انجام نشد.";
+    btn.disabled = false; btn.textContent = "ثبت پاسخ";
+    showAlt(fallbackText);
+  }
+});
+</script>
+</body>
+</html>
